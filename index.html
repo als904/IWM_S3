@@ -82,7 +82,7 @@
  
    map.addLayer(layer)
 
-  $.getJSON('map.geoJSON', function(data) {
+  $.getJSON('map.geojson', function(data) {
     console.log(data);
 
 //Marker options not yet functioning
@@ -142,7 +142,7 @@ function onEachFeature(feature, layer) {
 
 
 //Neighborhood tabulation shapes
-  $.getJSON('ntas.geoJSON', function(ntadata) {
+  $.getJSON('ntas.geojson', function(ntadata) {
     console.log(ntadata);
     L.geoJson(ntadata, {
       onEachFeature: onEachFeature
